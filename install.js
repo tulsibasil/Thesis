@@ -10,7 +10,9 @@ function openweb(){
 	window.open("https://tulsibasil.github.io/surveillance/surveillance.html")
 }
 
-
+function openzine(){
+	window.open("zine.html")
+}
 
 
 
@@ -71,5 +73,27 @@ invert.addEventListener("mouseover", function() {
 invert.addEventListener("mouseout", function() {
   pent.style.transform = ""; // Reset the scale of #ani to its original value
 });
+
+
+
+const zine = document.querySelector("#zine");
+const z = document.querySelector("#z");
+
+z.addEventListener("mouseover", function() {
+  zine.style.color = "black"; // Change the color of #data to red
+});
+z.addEventListener("mouseout", function() {
+  zine.style.color = ""; // Reset the color of #data to its original value
+});
+
+zine.addEventListener("mouseover", function() {
+  z.style.transform = "scale(1.2)"; // Scale up #ani by 1.2
+});
+
+zine.addEventListener("mouseout", function() {
+  z.style.transform = ""; // Reset the scale of #ani to its original value
+});
+
+
 
 
