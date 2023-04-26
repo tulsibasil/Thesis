@@ -14,6 +14,13 @@ function openzine(){
 	window.open("zine.html")
 }
 
+function openpst(){
+  window.open("posters.html")
+}
+
+function opengall(){
+  window.open("gallery.html")
+}
 
 
 const ani = document.querySelector("#ani");
@@ -92,6 +99,44 @@ zine.addEventListener("mouseover", function() {
 
 zine.addEventListener("mouseout", function() {
   z.style.transform = ""; // Reset the scale of #ani to its original value
+});
+
+
+const post = document.querySelector("#post");
+const pst = document.querySelector("#pst");
+
+pst.addEventListener("mouseover", function() {
+  post.style.color = "black"; // Change the color of #data to red
+});
+pst.addEventListener("mouseout", function() {
+  post.style.color = ""; // Reset the color of #data to its original value
+});
+
+post.addEventListener("mouseover", function() {
+  pst.style.transform = "scale(1.2)"; // Scale up #ani by 1.2
+});
+
+post.addEventListener("mouseout", function() {
+  pst.style.transform = ""; // Reset the scale of #ani to its original value
+});
+
+
+const gall = document.querySelector("#gall");
+const gal = document.querySelector("#gal");
+
+gall.addEventListener("mouseover", function() {
+  gal.style.color = "black"; // Change the color of #data to red
+});
+gall.addEventListener("mouseout", function() {
+  gal.style.color = ""; // Reset the color of #data to its original value
+});
+
+gal.addEventListener("mouseover", function() {
+  gall.style.transform = "scale(1.2)"; // Scale up #ani by 1.2
+});
+
+gal.addEventListener("mouseout", function() {
+  gall.style.transform = ""; // Reset the scale of #ani to its original value
 });
 
 
