@@ -17,10 +17,13 @@ body {
   src: url(lover.ttf);
 }
 
+.container{
+	position: relative;
+}
 
 #menu{
 	background-color: red;
-	z-index: 1;
+	z-index: 10;
 	width: 18vw;
 	height: 50vw;
 	text-align: right;
@@ -29,9 +32,11 @@ body {
 	font-size: 2.5vw;
 	padding-right: 5px;
 	color: white;
-	margin-right: 10px;
-	margin-top: 15px;
+	top: 15px;
+	right: 10px;
 	padding-top: 10px;
+	display: inline;
+	position: absolute;
 }
 
 #data{
@@ -131,6 +136,20 @@ h1{
 	animation: flicker 0.5s infinite;
 	animation-direction: alternate;
 }
+
+h3{
+	font-size: 30px;
+	color: red;
+	display: inline;
+	font-family: rationale;
+	margin-left: 2vw;
+	letter-spacing: 0.05em;
+	z-index: 0;
+	display: inline;
+	position: absolute;
+	top: 4vw;
+}
+
 
 .pics{
 	position: relative;
@@ -233,6 +252,21 @@ h1{
   transform: scale(1.3);
 }
 
+
+#play-btn {
+  background-color: whitesmoke;
+  border: red solid 2px;
+  color: black;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 20px;
+  margin-left: 48vw;
+  margin-top: 0.5vw;
+  position: absolute;
+}
 
 
 

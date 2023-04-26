@@ -140,5 +140,15 @@ gal.addEventListener("mouseout", function() {
 });
 
 
-
+  var audio = document.getElementById("audio");
+  var playBtn = document.getElementById("play-btn");
+  playBtn.addEventListener("click", function() {
+    if (audio.paused) {
+      audio.play();
+      playBtn.innerHTML = "Pause audio";
+    } else {
+      audio.pause();
+      playBtn.innerHTML = "Play audio";
+    }
+  });
 
