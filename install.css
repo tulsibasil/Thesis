@@ -101,14 +101,17 @@ body {
 	color: black;
 }
 
-/*@keyframes flicker {
-  0% {
-    opacity: 0.1;
-  }
-  100% {
-    opacity: 1;
-  }
-}*/
+#thesis{
+	text-decoration: none;
+	text-decoration-line: none;
+	text-decoration-color: none;
+	color: white;
+}
+
+#thesis:hover{
+	color: black;
+}
+
 
 @keyframes flicker {
   0% {
